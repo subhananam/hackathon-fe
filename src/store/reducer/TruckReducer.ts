@@ -9,7 +9,6 @@ interface Action{
 }
 
 const TruckReducer = (state = initialState, action : Action) => {
-  console.log("Hello",action)
   switch (action.type) {
     case TRANSPORTER_TRUCK_UPDATE:
       return state.map(s=> s.id === action.payload.id ? action.payload : s);
