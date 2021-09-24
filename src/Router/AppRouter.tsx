@@ -3,6 +3,7 @@ import {
     Switch,
     Route
   } from "react-router-dom";
+import Trucks from 'src/Pages/Trucks';
 import Dashboard from '../Pages/Dashboard';
 import Page1 from '../Pages/Page1';
 
@@ -12,8 +13,8 @@ function AppRouter() {
           <Route exact path="/">
             <Dashboard />
           </Route>
-          <Route exact path="/page1">
-            <Page1 />
+          <Route exact path="/trucks">
+            <Trucks />
           </Route>
         </Switch>
     )

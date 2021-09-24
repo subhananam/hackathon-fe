@@ -1,7 +1,7 @@
 const initialState = {
     isOpen: false,
-    type: "",
-    message: "",
+    type: "anu",
+    message: "cek",
   };
   
   const auth = (state = initialState, action) => {
