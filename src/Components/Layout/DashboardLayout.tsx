@@ -94,7 +94,7 @@ const Drawer = styled(MuiDrawer, {
 const mdTheme = createTheme()
 
 function DashboardLayout(props: ILayout) {
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
   const toggleDrawer = () => {
     setOpen(!open)
   }

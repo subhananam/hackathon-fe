@@ -36,7 +36,7 @@ function SideNav() {
     <List>
       {menus.map((menu, index) => (
         <Link to={menu.url} key={index} style={{textDecoration:"none", color:"inherit"}}>
-        <ListItem button >
+        <ListItem button title={menu.name} >
           <ListItemIcon>
             {menu.icon}
           </ListItemIcon>
