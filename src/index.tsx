@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import store from "./store/config";
 import { ThemeProvider } from "@mui/material/styles";
-import "antd/dist/antd.css";
 import theme from "./materialTheme";
 const app = (
   <Provider store={store}>
