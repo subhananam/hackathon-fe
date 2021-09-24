@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "antd/dist/antd.css"
-
+import { Provider } from "react-redux";
+import store from "./store/config";
+import { ThemeProvider } from "@mui/material/styles";
+import "antd/dist/antd.css";
+import theme from "./materialTheme";
+const app = (
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </Provider>
+);
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  app,
   document.getElementById('root')
 );
 
